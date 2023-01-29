@@ -1,11 +1,10 @@
 document.getElementById('getApi').addEventListener('click', getApi);
 document.getElementById('getApi').addEventListener('onkeydown', getApi);
-const apiId = 'e2d2fe2c76f848a2b1570500222607';
 
 function getApi() {
 
   name = encodeURI(document.getElementById('ipAddress').value);
-  console.log("IP address :", name);
+  console.log("input name :", name);
 
   fetch(`https://api.genderize.io?name=${name}`, {
     method: 'GET',
